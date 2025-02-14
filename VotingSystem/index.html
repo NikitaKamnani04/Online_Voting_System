@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .slideUpBtn {
+        padding: 12px 24px;
+        background-color: transparent;
+        border: 2px solid hsl(243, 80%, 62%);
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(1,.15,.34,.92);
+      }
+      .slideUpBtn span {
+        display: inline-block;
+        transition: inherit;
+        color: hsl(243, 80%, 62%);
+      }
+      .slideUpBtn:hover span {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      .slideUpBtn::before {
+        content: "";
+        background-color: hsl(243, 80%, 62%);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateY(100%);
+        transition: inherit;
+        width: 100%;
+      }
+      .slideUpBtn::after {
+        content: 'Vote Now';
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: inherit;
+        transform: translateY(100%);
+        width: 100%;
+      }
+      .slideUpBtn:hover::before {
+        transform: translateY(0) scale(3);
+        transition-delay: .025s;
+      }
+      .slideUpBtn:hover::after {
+        opacity: 1;
+        color: hsl(222, 100%, 95%);
+        transform: translateY(0);
+      }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="cont-3">
+        <header id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+                <a class="navbar-brand mt-3" href="" style="color: white; font-weight: 600;">GO VOTE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mt-3" style="padding-right: 50px;">
+                        <!-- <li class="nav-item"><a class="nav-link" href="home.html" style="color:white; font-weight: 600;">Home</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="routes/register.html" style="color:white; font-weight: 600;">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutUs.html" style="color:white; font-weight: 600;">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" style="text-align: center;">
+                        <h1>Online Voting System</h1>
+                        <p>Online Voting System is software platform used to securely conduct votes and elections.</p>
+                        <a href="login.html"><button class="magnifyBtn">VOTE NOW</button></a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/2.svg" alt="Polling Image" height="600vh" width="90%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+            
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

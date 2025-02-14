@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+    <style>
+        #address {
+            width: 24.5%;
+        }
+
+        #imagepart {
+            border: 2px solid white;
+            border-radius: 5px;
+            /* padding: 7px; */
+            width: 24%; 
+        }
+
+        #role {
+            border: 2px solid white;
+            border-radius: 5px;
+            /* padding: 10px; */
+            width: 24%
+        }
+
+        #role select {
+            border-radius: 4px;
+            padding: 7px;
+        }
+
+        #register {
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background: linear-gradient(to right,
+                    #a517ba, #5f1178);
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+    <center>
+        <div id="headerSection">
+            <h1 style="color: white; margin-top: 10px;" class=" ">Online Voting System</h1>
+        </div>
+        <hr>
+        <h2 style="color: white; margin-top: 10px;" class=" ">Registration</h2>
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="cpassword" placeholder="Confirm Password"><br><br>
+            <input id="age" type="text" name="age" placeholder="Enter age">
+            <input id="dob" type="text" name="dob" placeholder="Enter DOB"><br><br>
+            <input id="address" type="text" name="address" placeholder="Enter Address"><br><br>
+
+
+            <div id="imagepart">
+                <h5 style="color: white;text-align: center;">Upload image:<input type="file" name="photo">
+                </h5>
+            </div>
+            <br>
+            <div id="role">
+                <h5 style="color: white; text-align: center;">Select your role: <select name="role"></h5>
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+                </select>
+            </div>
+
+            <br><br>
+
+            <button id="register">
+                Register</button><br><br>
+            <h4 style="color: white; margin-top: 0px;" class=" "> Already user?<a href="../index.html">Login here</a>
+            </h4>
+        </form>
+        </div>
+    </center>
+</body>
+
+</html>

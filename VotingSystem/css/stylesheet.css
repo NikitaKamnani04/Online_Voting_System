@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        #a517ba,#5f1178 
+    );
+    padding: 0;
+}
+
+#headerSection{
+    padding: 10px;
+}
+
+#headerSection h1{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#dropbox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 12%;
+}
+
+#loginbtn{
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        #a517ba,#5f1178 
+    );
+    color: white;
+    border-radius: 5px;
+    border:2px solid white;
+   
+}
+
+a{
+    color: white;
+}
