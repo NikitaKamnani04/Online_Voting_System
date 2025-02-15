@@ -17,5 +17,7 @@ Stored Results: Voting results are securely stored in the MySQL database via php
 Technologies Used:
 
 Frontend: HTML, CSS
+
 Backend: PHP
+
 Database: MySQL (phpMyAdmin)
